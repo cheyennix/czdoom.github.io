@@ -4,4 +4,4 @@ title: Games
 permalink: /games/
 ---
 # Our games
-- [Fourmiworld](Fourmiworld)
+- [fourmiworld](games/fourmiworld.md)

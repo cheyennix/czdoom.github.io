@@ -1,20 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
-  {% include header.html %}
-  
-  <main class="page-content">
-    <div class="container">
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <a href="{{ '/' | relative_url }}" class="site-title">{{ site.title }}</a>
+        <p class="site-description">{{ site.description }}</p>
+      </div>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+          <li><a href="{{ '/cheyennix/' | relative_url }}">cheyennix</a></li>
+          <li><a href="{{ '/zapathie/' | relative_url }}">Zapathie</a></li>
+          <li><a href="{{ '/games/' | relative_url }}">Games</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
       {{ content }}
-    </div>
-  </main>
-  
-  {% include footer.html %}
+    </main>
+  </div>
 </body>
 </html>

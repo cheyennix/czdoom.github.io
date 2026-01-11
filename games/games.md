@@ -3,5 +3,6 @@ layout: page
 title: Games
 permalink: /games/
 ---
-# Our games
-- [Fourmiworld](games/fourmiworld.md)
+We make games! Wanna check them out?
+- [Fourmiworld](games/fourmiworld.md) (2025)
+- [Project Marrow](games/project-marrow.md) (WIP)

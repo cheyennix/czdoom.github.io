@@ -2,8 +2,3 @@ title: CZDOOM
 description: cheyennix & Zapathie
 baseurl: ""
 url: "https://cheyennix.github.io"
-
-# Header pages
-header_pages:
-  - about.md
-  - games/games.md

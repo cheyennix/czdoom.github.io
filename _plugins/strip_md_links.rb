@@ -1,28 +1,32 @@
-Jekyll::Hooks.register :documents, :pre_render do |document|
+Jekyll::Hooks.register :documents, :post_render do |document|
+  # Get the site's baseurl
+  baseurl = document.site.config['baseurl'] || ''
+  
   # Convert links with .md extension to Jekyll permalinks
   # Handles both absolute (/path/file.md) and relative (path/file.md) links
-  document.content = document.content.gsub(/\[([^\]]+)\]\(([^):]+)\.md\)/) do |match|
-    link_text = $1
-    link_path = $2
+  document.output = document.output.gsub(/href="([^"]+)\.md"/) do |match|
+    link_path = $1
     
-    # Add leading slash if not present and not a URL (no http/https)
+    # Add leading slash if not present
     link_path = "/#{link_path}" unless link_path.start_with?('/')
     
-    # Convert to permalink format
-    "[#{link_text}](#{link_path}/)"
+    # Add baseurl and trailing slash
+    "href=\"#{baseurl}#{link_path}/\""
   end
 end
 
-Jekyll::Hooks.register :pages, :pre_render do |page|
+Jekyll::Hooks.register :pages, :post_render do |page|
+  # Get the site's baseurl
+  baseurl = page.site.config['baseurl'] || ''
+  
   # Same conversion for pages
-  page.content = page.content.gsub(/\[([^\]]+)\]\(([^):]+)\.md\)/) do |match|
-    link_text = $1
-    link_path = $2
+  page.output = page.output.gsub(/href="([^"]+)\.md"/) do |match|
+    link_path = $1
     
-    # Add leading slash if not present and not a URL (no http/https)
+    # Add leading slash if not present
     link_path = "/#{link_path}" unless link_path.start_with?('/')
     
-    # Convert to permalink format
-    "[#{link_text}](#{link_path}/)"
+    # Add baseurl and trailing slash
+    "href=\"#{baseurl}#{link_path}/\""
   end
 end

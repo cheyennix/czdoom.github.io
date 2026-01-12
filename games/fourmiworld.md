@@ -4,9 +4,11 @@ title: Fourmiworld
 permalink: /games/fourmiworld/
 categories: games
 ---
-![Fourmiworld Logo](assets/images/fourmiworld_logo.png)
-Our first game, Fourmiworld, is a totally free experience that you can play RIGHT NOW on Steam! If you like interdimensional shenanigans and exploring surreal, alien environments, [check it out here](https://store.steampowered.com/app/3747140/)! Wandereye's waiting!
+<img src="/assets/images/fourmiworld_logo.png" alt="Carve your own path!" style="border: none;">
+Our first game, Fourmiworld, is a totally free experience that you can play RIGHT NOW on Steam! If you like interdimensional shenanigans and exploring surreal, alien environments, check it out - Wandereye's waiting!
 
+---
+<iframe src="https://store.steampowered.com/widget/3747140/" frameborder="0" width="646" height="190"></iframe>
 ---
 <div class="video-container">
   <iframe src="https://www.youtube.com/embed/lnBOmcH2Qn8" 
@@ -20,4 +22,5 @@ Our first game, Fourmiworld, is a totally free experience that you can play RIGH
 </div>
 
 ---
-![Basic, Drill, Invasive, Explosive, Pong, and Conductive](assets/images/seed_icons.gif)
+
+<img src="/assets/images/seed_icons.gif" alt="Basic, Drill, Invasive, Explosive, Pong, and Conductive" style="border: none;">

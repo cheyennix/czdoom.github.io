@@ -209,3 +209,33 @@ body {
   margin: 20px 0;
   border: 2px solid #ddd;
 }
+
+/* Small image */
+.main-content img.img-small {
+  max-width: 200px;
+}
+
+/* Medium image */
+.main-content img.img-medium {
+  max-width: 400px;
+}
+
+/* Centered image */
+.main-content img.img-center {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Profile picture style */
+.main-content img.img-pfp {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #7b4397;
+}
+
+/* No border image */
+.main-content img.img-no-border {
+  border: none;
+}

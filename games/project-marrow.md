@@ -8,6 +8,6 @@ Our second game, "Project Marrow" (working title) is a 3D adventure game current
 
 ---
 ![Who's that Pokémon?](assets/images/marrow_silhouette.png)
-Who's that Pokémon?
 
 ---
+Who's that Pokémon?
